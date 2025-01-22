@@ -936,17 +936,35 @@ body {
     body {
         .body {
             width: 100%;
-            max-width: 720px;
+
+            header {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             section {
+                width: 100%;
+
                 .section {
                     flex-wrap: wrap;
                     justify-content: center;
+
                     .gallery {
-                       margin: 40px 0;
+                        width: 100%;
+                        margin: 40px 0;
+                        .photo {
+                            width: 100%;
+                        }
                     }
+
                     .informations {
                         width: 100%;
-                        max-width: 720px;
+                        margin: 0;
+                        .title {
+                            width: 100%;
+                        }
                     }
                 }
             }
