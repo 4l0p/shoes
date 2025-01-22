@@ -167,9 +167,8 @@ body .body section .section .informations {
         }
 
         .new {
-            margin: 5px 0;
             font-family: "Brown Pro";
-            font-size: 25px;
+            font-size: 30px;
             font-weight: bold;
             color: #4169e1;
         }
