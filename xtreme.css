@@ -57,6 +57,28 @@ body .body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    header {
+        margin: 35px 0;
+        .logo {
+            img {
+                height: 100px;
+            }
+        }
+        .timer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            p {
+                font-size: 25px;
+                span {
+                    color: #00b8fc;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
 }
 
 /* HEADER */
@@ -669,15 +691,70 @@ body .section {
                     justify-content: center;
                     flex-direction: column;
                     margin-bottom: 30px;
-                    .title-section-10 {
-
+                    .title-section-10, .subtitle-section-10 {
+                        margin-bottom: 50px;
+                        line-height: 1.5;
                         h2 {
                             text-transform: uppercase;
+                        }
+                        h3 {
+                            font-size: 25px;
                         }
                     }
                 }
             }
         }
     }
+}
 
+body {
+    footer {
+            background-color:#1c1c1c;
+            margin: 50px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 90%;
+                .row-up {
+                    display: flex;
+                    div {
+                        margin-right: 50px;
+                        h2 {
+                            margin: 20px 0;
+                        }
+                        p {
+                            line-height: 1.8;
+                        }
+                        a {
+                            display: block;
+                            width: 100%;
+                        }
+                        img.size {
+                                height: 35px;
+                        }
+                    }
+                    div.links {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        a {
+                            color: #ffffff;
+                            text-decoration: none;
+                            font-weight: 700;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                .row-down {
+                    margin-top: 30px;
+                    text-align: center;
+                    line-height: 2.2;
+                }
+            }
+        }
 }
