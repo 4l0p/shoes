@@ -38,6 +38,12 @@ p {
     text-transform: none;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 body {
     width: 100%;
     display: flex;
@@ -49,6 +55,16 @@ body {
     font-weight: 300;
     font-size: 18px;
     color: var(--page-font-color);
+
+    .marquee {
+        background-color: #4169e1;
+        padding: 10px;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+
+    }
 }
 
 body .body {
@@ -93,7 +109,7 @@ body .body {
 
 body .body section {
     width: 1220px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 body .body section .section {
@@ -112,19 +128,18 @@ body .body section .section .gallery .photo {
 }
 
 body .body section .section .gallery .photo img {
-    width: 620px;
+    width: 100%;
 }
 
-body .body section .section .gallery .thumbs {
-    width: 720px;
+.thumbs {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-body .body section .section .gallery .thumbs .thumb-card {
-    width: 150px;
-    height: 150px;
+.thumbs .thumb-card {
+    width: 100px;
+    height: 100px;
     border: 2px solid #697172;
     display: flex;
     justify-content: center;
@@ -132,14 +147,14 @@ body .body section .section .gallery .thumbs .thumb-card {
     border-radius: 6px;
 }
 
-body .body section .section .gallery .thumbs .thumb-card img {
-    width: 120px;
+.thumbs .thumb-card img {
+    width: 90px;
     border-radius: 6px;
 }
 
 body .body section .section .informations {
 
-    margin-left: 20px;
+    margin-left: 40px;
 
     .title {
         text-transform: uppercase;
@@ -178,27 +193,33 @@ body .body section .section .informations {
     .buy {
         margin-top: 30px;
         display: flex;
-        .control{
+
+        .control {
             display: flex;
             justify-content: center;
             margin-right: 30px;
-            .sum, .sub{
+
+            .sum,
+            .sub {
                 width: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-color: #4e4e4e;
-                
+
             }
+
             .sum {
                 border-radius: 4px 0 0 4px;
                 font-size: 30px;
             }
+
             .sub {
                 border-radius: 0 4px 4px 0;
                 font-size: 30px;
                 font-weight: 600;
             }
+
             input {
                 width: 40px;
                 display: flex;
