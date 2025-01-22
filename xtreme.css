@@ -75,27 +75,11 @@ body .body {
     align-items: center;
 
     header {
-        margin: 35px 0;
+        margin: 50px 0;
 
         .logo {
             img {
                 height: 100px;
-            }
-        }
-
-        .timer {
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-            font-weight: bold;
-
-            p {
-                font-size: 25px;
-
-                span {
-                    color: #4169e1;
-                    font-weight: 900;
-                }
             }
         }
     }
@@ -109,7 +93,6 @@ body .body {
 
 body .body section {
     width: 1220px;
-    margin-top: 20px;
 }
 
 body .body section .section {
