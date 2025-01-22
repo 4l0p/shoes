@@ -31,17 +31,23 @@ h1 {
     font-size: 30px;
 }
 
+h3 {
+    font-family: "Brown Pro";
+    font-weight: 100;
+    font-size: 16px;
+}
+
 p {
     font-family: "Brown Pro Light";
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: none;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 body {
@@ -159,7 +165,7 @@ body .body section .section .informations {
         margin: 20px 0;
 
         .dashed {
-            font-size: 12px;
+            font-size: 15px;
             margin-bottom: 5px;
             span {
                 text-decoration: line-through;
@@ -173,9 +179,9 @@ body .body section .section .informations {
             color: #4169e1;
         }
         .card {
-            margin: 5px 0 20px 0;
-            font-size: 18px;
-            font-weight: 500;
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 700;
         }
         .pix {
             margin: 10px 0 0 0;
@@ -194,12 +200,12 @@ body .body section .section .informations {
         line-height: 1.5;
 
         .sizes {
-            margin-top: 20px;
+            margin-top: 30px;
 
             .flex-sizes {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 20px;
+                margin-top: 10px;
 
                 .box-sizes {
                     width: 35px;
@@ -215,7 +221,7 @@ body .body section .section .informations {
     }
 
     .buy {
-        margin-top: 30px;
+        margin-top: 35px;
         display: flex;
 
         .control {
@@ -277,7 +283,7 @@ body .body section .section .informations {
     }
 
     .extras {
-        margin-top: 30px;
+        margin-top: 35px;
 
         .info-security {
             margin-top: 20px;
