@@ -946,14 +946,15 @@ body {
 
             section {
                 width: 100%;
-
+                display: flex;
+                justify-content: center;
                 .section {
                     flex-wrap: wrap;
                     justify-content: center;
 
                     .gallery {
                         width: 100%;
-                        margin: 40px 0;
+                        margin: 0;
                         .photo {
                             width: 100%;
                         }
@@ -965,6 +966,19 @@ body {
                         .title {
                             width: 100%;
                         }
+                        .buy {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+
+            article {
+                width: 100%;
+                .section-2 {
+                    width: 100%;
+                    .xtreme-blur {
+                        top: 25%
                     }
                 }
             }
