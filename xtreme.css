@@ -160,6 +160,12 @@ body .body section .section .informations {
         text-transform: uppercase;
         line-height: 1.4;
         font-weight: 900;
+        .star {
+            margin-top: 10px;
+            img{
+                height: 12px;
+            }
+        }
     }
 
     .price {
@@ -167,7 +173,7 @@ body .body section .section .informations {
 
         .dashed {
             font-size: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
             span {
                 text-decoration: line-through;
             }
