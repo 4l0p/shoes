@@ -165,6 +165,7 @@ body .body section .section .informations {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    border-radius: 4px;
                 }
             }
         }
@@ -182,6 +183,24 @@ body .body section .section .informations {
             height: 50px;
             background-color: #00b8fc;
             border: none;
+            border-radius: 4px;
+        }
+    }
+
+    .extras {
+        margin-top: 30px;
+        .info-security {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4e4e4e;
+            padding: 9px 30px;
+            border-radius: 4px;
+            border: none;
+            .add {
+                font-size: 25px;
+            }
         }
     }
 }
@@ -288,10 +307,6 @@ body article {
 }
 
 /* end animantions */
-
-/* END SECTION 2 */
-
-/* SECTION 3 */
 
 body .section {
     width: 100%;
