@@ -134,16 +134,32 @@ body .body section .section .gallery .photo img {
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-}
-
-.thumbs .thumb-card.selected {
-    border: 2px solid #4169e1;
+    div.hide {
+        display: none;
+    }
 }
 
 .thumbs .thumb-card img {
     width: 90px;
     border-radius: 6px;
 }
+
+.thumbs .thumb-card.selected {
+    border: 2px solid #4169e1;
+    position: relative;
+    div.active {
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        img {
+            opacity: 1;
+            order: 0;
+            height: 30px;
+            width: 40px;
+        }
+    }
+}
+
 
 body .body section .section .informations {
 
@@ -153,11 +169,14 @@ body .body section .section .informations {
         text-transform: uppercase;
         line-height: 1.4;
         font-weight: 900;
+
         .star {
             margin-top: 10px;
-            img{
+
+            img {
                 height: 12px;
             }
+
             span {
                 font-size: 14px;
                 font-weight: 500;
@@ -171,6 +190,7 @@ body .body section .section .informations {
         .dashed {
             font-size: 15px;
             margin-bottom: 5px;
+
             span {
                 text-decoration: line-through;
                 color: #c4ccce;
@@ -183,17 +203,20 @@ body .body section .section .informations {
             font-weight: bold;
             color: #4169e1;
         }
+
         .card {
             margin-bottom: 30px;
             font-size: 16px;
             font-weight: 700;
         }
+
         .pix {
             margin: 10px 0 0 0;
             font-size: 30px;
             font-weight: 700;
             display: none;
         }
+
         .pix-info {
             margin-bottom: 20px;
             font-size: 15px;
@@ -221,7 +244,7 @@ body .body section .section .informations {
                     align-items: center;
                     border-radius: 4px;
                 }
-                
+
                 .box-sizes.selected {
                     border: 1px solid #4169e1;
                     background-color: #4169e1;
