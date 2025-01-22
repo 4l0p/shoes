@@ -134,6 +134,7 @@ body .body section .section .gallery .photo img {
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+
     div.hide {
         display: none;
     }
@@ -147,6 +148,7 @@ body .body section .section .gallery .photo img {
 .thumbs .thumb-card.selected {
     border: 2px solid #4169e1;
     position: relative;
+
     div.active {
         position: absolute;
         top: 5px;
@@ -928,4 +930,28 @@ body {
             }
         }
     }
+}
+
+@media (max-width: 1220px) {
+    body {
+        .body {
+            width: 100%;
+            max-width: 720px;
+            section {
+                .section {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .gallery {
+                       margin: 40px 0;
+                    }
+                    .informations {
+                        width: 100%;
+                        max-width: 720px;
+                    }
+                }
+            }
+        }
+
+    }
+
 }
