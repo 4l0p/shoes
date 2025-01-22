@@ -148,6 +148,10 @@ body .body section .section .informations {
             img{
                 height: 12px;
             }
+            span {
+                font-size: 14px;
+                font-weight: 500;
+            }
         }
     }
 
