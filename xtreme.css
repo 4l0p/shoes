@@ -149,13 +149,13 @@ body .body section .section .gallery .photo img {
     position: relative;
     div.active {
         position: absolute;
-        top: -10px;
-        left: -10px;
+        top: 5px;
+        left: 5px;
+
         img {
             opacity: 1;
-            order: 0;
-            height: 30px;
-            width: 40px;
+            height: 25px;
+            width: 25px;
         }
     }
 }
