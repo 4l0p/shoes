@@ -596,8 +596,11 @@ body .section {
                     }
                 }
 
-                img {
-                    max-width: 600px;
+                .show {
+                    animation: cloudAnimation 3s infinite alternate;
+                    img {
+                        max-width: 600px;
+                    }
                 }
 
                 .next {
@@ -1279,4 +1282,8 @@ body {
         }
     }
 
+}
+
+.hide {
+    display: none;
 }
