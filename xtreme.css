@@ -593,6 +593,7 @@ body .section {
                     img {
                         height: 50px;
                         filter: invert(100%);
+                        cursor: pointer;
                     }
                 }
 
@@ -610,6 +611,7 @@ body .section {
                     img {
                         height: 50px;
                         filter: invert(100%);
+                        cursor: pointer;
                     }
                 }
 
@@ -635,6 +637,7 @@ body .section {
                             display: block;
                             height: 50px;
                             width: 78px;
+                            cursor: pointer;
                         }
                     }
                 }
