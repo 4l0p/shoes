@@ -945,6 +945,13 @@ body {
 
 @media (max-width: 1220px) {
     body {
+
+        .marquee {
+            padding: 5px;
+            font-size: 9px;
+            font-weight: 600;
+        }
+
         .body {
             width: 100%;
 
@@ -953,6 +960,16 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 25px 0;
+
+                .logo {
+                    margin: 0;
+
+                    img {
+                        max-height: 80px;
+                    }
+                }
+
             }
 
             section {
@@ -979,6 +996,27 @@ body {
 
                         .title {
                             width: 100%;
+                            padding: 0 10px;
+                        }
+
+                        .price {
+                            width: 100%;
+                            padding: 0 10px;
+
+                            .desc {
+                                .sizes {
+                                    width: 100%;
+
+                                    .flex-sizes {
+                                        width: 100%;
+
+                                        .box-sizes {
+                                            height: 30px;
+                                            width: 30px;
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         .buy {
@@ -1136,7 +1174,7 @@ body {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            max-width: 320px;
+                            max-width: 310px;
 
                             img {
                                 width: 100%;
@@ -1374,30 +1412,30 @@ body {
         height: 80px;
         border: 2px solid #697172;
         border-radius: 5px;
-    
+
         div.hide {
             display: none;
         }
     }
-    
+
     .thumbs .thumb-card img {
         width: 70px;
         border-radius: 5px;
     }
-    
+
     .thumbs .thumb-card.selected {
-    
+
         div.active {
             top: 3px;
             left: 3px;
-    
+
             img {
                 height: 20px;
                 width: 20px;
             }
         }
     }
-    
+
 
 }
 
