@@ -1365,6 +1365,40 @@ body {
         }
     }
 
+    .flex {
+        justify-content: space-around;
+    }
+
+    .thumbs .thumb-card {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #697172;
+        border-radius: 5px;
+    
+        div.hide {
+            display: none;
+        }
+    }
+    
+    .thumbs .thumb-card img {
+        width: 70px;
+        border-radius: 5px;
+    }
+    
+    .thumbs .thumb-card.selected {
+    
+        div.active {
+            top: 3px;
+            left: 3px;
+    
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    
+
 }
 
 .hide {
