@@ -1323,6 +1323,7 @@ body {
                                     padding: 0 10px;
 
                                     .item {
+                                        margin: 25px 0;
                                         .icon {
                                             img {
                                                 width: 50px;
