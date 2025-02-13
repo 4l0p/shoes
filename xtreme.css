@@ -694,7 +694,7 @@ body .section {
         background-size: cover;
         display: flex;
         justify-content: center;
-        color: #4e4e4e;
+        color: #333;
 
         .table {
             margin-top: 40px;
@@ -788,9 +788,9 @@ body .section {
                 .col-top {
                     display: flex;
                     align-items: flex-start;
-                    justify-content: center;
+                    justify-content: end;
                     flex: 1;
-                    margin-bottom: 30px;
+                    margin-right: 100px;
 
                     .title-section-9 {
                         padding: 30px;
@@ -1061,9 +1061,9 @@ body {
                 justify-content: flex-start;
 
                 .box-section {
-                    margin: 20px 0 0 0;
+                    margin: 20px 0px 0px;
                     width: 100%;
-                    padding: 0 5px;
+                    padding: 40px 60px 0px 60px;
 
                     .h2 {
                         width: 100%;
