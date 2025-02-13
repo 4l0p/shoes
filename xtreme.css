@@ -1069,16 +1069,16 @@ body {
                         width: 100%;
 
                         h2 {
-                            line-height: 1.6;
-                            font-size: 35px;
+                            /* line-height: 1.6; */
+                            font-size: 19px;
                         }
                     }
 
                     .text {
-                        line-height: 1.8;
+                        line-height: 1.2;
 
                         p {
-                            font-size: 20px;
+                            font-size: 15px;
                         }
                     }
                 }
