@@ -44,6 +44,18 @@ p {
     text-transform: none;
 }
 
+button {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 19px;
+    width: 100%;
+    height: 50px;
+    background-color: #4169e1;
+    border: none;
+    border-radius: 4px;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -118,6 +130,7 @@ body .body section .section .gallery .photo {
 
 body .body section .section .gallery .photo img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .thumbs {
@@ -238,6 +251,7 @@ body .body section .section .informations {
                 margin-top: 10px;
 
                 .box-sizes {
+                    font-family: 'Montserrat';
                     width: 35px;
                     height: 35px;
                     border: 1px solid rgb(194, 194, 194);
@@ -251,7 +265,7 @@ body .body section .section .informations {
                     border: 1px solid #4169e1;
                     background-color: #4169e1;
                     color: rgb(255, 255, 255);
-                    font-weight: 900;
+                    font-weight: 700;
                 }
             }
         }
@@ -300,23 +314,11 @@ body .body section .section .informations {
             }
         }
 
-
         input::-webkit-inner-spin-button {
             appearance: none;
             margin: 0;
         }
 
-        button {
-            font-family: "Brown Pro";
-            color: #ffffff;
-            text-transform: uppercase;
-            font-size: 18px;
-            width: 100%;
-            height: 50px;
-            background-color: #4169e1;
-            border: none;
-            border-radius: 4px;
-        }
     }
 
     .extras {
