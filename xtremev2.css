@@ -28,10 +28,12 @@ h1 {
 
 h2 {
     font-size: var(--h2-size);
+    font-weight: normal;
 }
 
 h3 {
     font-size: var(--h3-size);
+    font-weight: normal;
 }
 
 p {
@@ -60,7 +62,7 @@ body {
     width: 100%;
     text-align: center;
     background-color: var(--color-blue);
-    padding: 5px 0;
+    padding: 0.31rem 0;
 }
 
 header {
@@ -70,7 +72,7 @@ header {
 }
 
 .logo {
-    margin: 40px 0;
+    margin: 2.5rem 0;
 }
 
 .logo img {
@@ -96,7 +98,7 @@ main {
 
 .main-photo img {
     height: 45rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .main-info {
@@ -136,7 +138,7 @@ main {
 
     h5 {
         text-decoration: line-through;
-        font-size: 14px;
+        font-size: 0.8rem;
         font-weight: 100;
         color: rgb(189, 189, 189);
     }
@@ -169,23 +171,23 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 700px;
+    max-width: 43.7rem;
     margin: 0 auto;
 }
 
 .options--colors__img img {
     width: 23%;
     height: auto;
-    border: 2px solid rgb(100, 100, 100);
-    border-radius: 5px;
-    padding: 5px;
+    border: 0.12rem solid rgb(100, 100, 100);
+    border-radius: 0.25rem;
+    padding: 0.31rem;
     cursor: pointer;
     object-fit: cover;
 }
 
 .main-info__options--sizes {
     display: grid;
-    gap: 10px;
+    gap: 0.62rem;
 }
 
 .options--sizes__numbers {
@@ -195,20 +197,21 @@ main {
 
 .options--sizes__numbers .size {
     font-family: 'Oxanium';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
     display: grid;
     place-items: center;
-    padding: 8px;
-    border: 3px solid rgb(100, 100, 100);
-    border-radius: 5px;
+    padding: 0.5rem;
+    border: 0.18rem solid rgb(100, 100, 100);
+    border-radius: 0.25rem;
     line-height: 1;
     cursor: pointer;
+    user-select: none;
 }
 
 .options--colors__img img.selected,
 .options--sizes__numbers .size.selected {
-    border: 3px solid #4169e1;
+    border: 0.18rem solid #4169e1;
     background-color: #182446;
     font-weight: 800;
 }
@@ -216,7 +219,7 @@ main {
 .main-info__payment {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 0.9rem;
     width: 100%;
 }
 
@@ -226,20 +229,20 @@ main {
     button {
         background-color: #2b2b2b;
         border: none;
-        border-radius: 4px 0 0 4px;
-        width: 40px;
+        border-radius: 0.25rem 0 0 0.25rem;
+        width: 2.5rem;
         font-family: 'Oxanium';
-        font-size: 30px;
+        font-size: 1.8rem;
         color: rgb(170, 170, 170);
     }
 
     button:last-child {
-        border-radius: 0 4px 4px 0;
+        border-radius: 0 0.25rem 0.25rem 0;
     }
 
     input[type=number] {
-        width: 40px;
-        font-size: 25px;
+        width: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
         background-color: #ffffff;
@@ -253,15 +256,15 @@ main {
 
     button {
         font-family: 'Oxanium';
-        font-size: 23px;
+        font-size: 1.4rem;
         font-weight: 600;
         background-color: #4169e1;
         color: white;
         width: 100%;
-        border-radius: 4px;
+        border-radius: 0.25rem;
         border: none;
         cursor: pointer;
-        padding: 10px 0;
+        padding: 0.62rem 0;
     }
 
     button:hover {
@@ -282,14 +285,14 @@ section {
     background: url(./assets/background-section-1.svg) no-repeat;
     background-position: center center;
     background-size: cover;
-    min-height: 600px;
+    min-height: 37.5rem;
     display: grid;
     place-items: center;
     position: relative;
 }
 
 .section__xtreme--blur img {
-    max-width: 900px;
+    max-width: 56.2rem;
     width: 100%;
     animation: blurAnimation 3s infinite alternate;
 }
@@ -315,7 +318,7 @@ section {
     position: absolute;
 
     img {
-        max-width: 600px;
+        max-width: 37.5rem;
         animation: cloudAnimation 3s infinite alternate;
     }
 }
@@ -337,7 +340,7 @@ section {
 .section-2 {
     background: url(./assets/background-section-3.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     place-items: center;
@@ -346,7 +349,7 @@ section {
 .section-3 {
     background: url(./assets/background-section-4.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     justify-content: end;
@@ -356,7 +359,7 @@ section {
 .section-4 {
     background: url(./assets/background-section-5.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     place-items: center;
@@ -366,7 +369,7 @@ section {
     background: url(./assets/background-section-1.svg) no-repeat;
     display: grid;
     place-items: center;
-    padding: 30px 0;
+    padding: 1.8rem 0;
 
     .section__slide {
         display: grid;
@@ -374,13 +377,13 @@ section {
             "section__slide--prev section__slide--shoe section__slide--next"
             ". section__slide--thumbs .";
         place-items: center;
-        gap: 20px;
+        gap: 1.25rem;
 
         .section__slide--prev {
             grid-area: section__slide--prev;
 
             img {
-                height: 50px;
+                height: 3.1rem;
                 filter: invert(100%);
                 cursor: pointer;
             }
@@ -390,7 +393,7 @@ section {
             grid-area: section__slide--shoe;
 
             img {
-                max-width: 600px;
+                max-width: 37.5rem;
                 filter: drop-shadow(0px 0px 6px #fff);
                 animation: cloudAnimation 3s infinite alternate;
             }
@@ -400,7 +403,7 @@ section {
             grid-area: section__slide--next;
 
             img {
-                height: 50px;
+                height: 3.1rem;
                 filter: invert(100%);
                 cursor: pointer;
             }
@@ -418,8 +421,8 @@ section {
                 justify-content: space-around;
 
                 .thumb-circle {
-                    height: 100px;
-                    width: 100px;
+                    height: 6.25rem;
+                    width: 6.25rem;
                     background-color: rgb(196, 196, 196);
                     border-radius: 50%;
                     display: grid;
@@ -427,13 +430,13 @@ section {
                     cursor: pointer;
 
                     img {
-                        height: 50px;
-                        width: 78px;
+                        height: 3.1rem;
+                        width: 4.8rem;
                     }
                 }
 
                 .thumb-circle.active {
-                    border: 3px solid #355dd4;
+                    border: 0.18rem solid #355dd4;
                     background-color: #ffffff;
                 }
             }
@@ -445,7 +448,7 @@ section {
 .section-6 {
     background: url(./assets/background-section-7.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     justify-content: end;
@@ -455,7 +458,7 @@ section {
 .section-7 {
     background: url(./assets/background-section-8.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     grid-template-areas:
@@ -471,15 +474,16 @@ section {
     .section__items {
         grid-area: section__items;
         display: grid;
-        gap: 30px;
+        gap: 1.8rem;
         justify-self: end;
+
         .item {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 0.9rem;
 
             .text {
-                font-size: 25px;
+                font-size: 1.5rem;
                 color: #414141;
             }
         }
@@ -488,8 +492,9 @@ section {
     .section__shoe {
         grid-area: section__shoe;
         justify-self: start;
+
         img {
-            width: 500px;
+            width: 31.2rem;
         }
     }
 }
@@ -497,30 +502,34 @@ section {
 .section-8 {
     background: url(./assets/background-section-9.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     justify-content: end;
     align-content: center;
 
     .box-section {
-        gap: 20px;
+        gap: 1.25rem;
+
         .section__h2 {
             justify-self: center;
         }
+
         .section__items {
             display: grid;
-            gap: 20px;
+            gap: 1.25rem;
+
             .item {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 1.25rem;
+
                 .text {
                     display: flex;
                     align-items: center;
-                    font-size: 20px;
-                    gap: 20px;
-                    max-width: 750px;
+                    font-size: 1.25rem;
+                    gap: 1.25rem;
+                    max-width: 46.8rem;
                 }
             }
         }
@@ -530,10 +539,11 @@ section {
 .section-9 {
     background: url(./assets/background-section-10.jpg) no-repeat;
     background-position: center bottom;
-    min-height: 600px;
+    min-height: 37.5rem;
     background-size: cover;
     display: grid;
     align-items: center;
+
     .box-section {
         width: 100%;
         justify-content: center;
@@ -542,18 +552,17 @@ section {
 }
 
 .box-section {
-    width: calc(100% - 200px);
+    width: calc(100% - 12.5rem);
     min-height: 16.5rem;
     display: grid;
     justify-content: space-between;
 }
 
-
 /* pesquisar calc() */
 
 .right {
     width: 100%;
-    margin-right: calc((100% + 300px) / 2);
+    margin-right: calc((100% + 18.7rem) / 2);
 }
 
 .section__h2 {
@@ -564,8 +573,8 @@ section {
 }
 
 .section__text {
-    max-width: 800px;
-    font-size: 20px;
+    max-width: 50rem;
+    font-size: 1.25rem;
     font-weight: normal;
     line-height: 150%;
     filter: drop-shadow(3px 3px 2px #000);
@@ -584,13 +593,70 @@ section {
     filter: none;
 }
 
+@media (min-width: 1000px) and (max-width: 1500px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .box-section {
+        width: calc(100% - 5rem);
+    }
+
+    .section__text {
+        width: 36.2rem;
+        font-size: 1rem;
+    }
+
+    .right {
+        margin-right: calc((100% + 10.6rem) / 2);
+    }
+
+    .section-7 {
+        .section__items {
+            .item {
+                .text {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .section__shoe {
+            img {
+                width: 28.1rem;
+            }
+        }
+    }
+
+    .section-8 {
+        .box-section.right {
+            width: 100%;
+            max-width: 36.2rem;
+
+            .section__items {
+                .item {
+                    .icon {
+                        img {
+                            height: 4rem;
+                            width: 4rem;
+                        }
+
+                        .text {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .hide {
     display: none;
 }
 
 footer {
     background-color: #1c1c1c;
-    margin: 50px 0;
+    margin: 3.1rem 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -606,10 +672,10 @@ footer {
             display: flex;
 
             div {
-                margin-right: 50px;
+                margin-right: 3.1rem;
 
                 h2 {
-                    margin: 20px 0;
+                    margin: 1.25rem 0;
                 }
 
                 p {
@@ -622,7 +688,7 @@ footer {
                 }
 
                 img.size {
-                    height: 35px;
+                    height: 2.1rem;
                 }
             }
 
@@ -635,13 +701,13 @@ footer {
                     color: #ffffff;
                     text-decoration: none;
                     font-weight: 700;
-                    margin-bottom: 15px;
+                    margin-bottom: 0.9rem;
                 }
             }
         }
 
         .row-down {
-            margin-top: 30px;
+            margin-top: 1.8rem;
             text-align: center;
             line-height: 2.2;
         }
