@@ -43,7 +43,7 @@ span {
 }
 
 body {
-    background-color: #121212;
+    background-color: #1c1c1c;
     color: var(--color-font);
     font-family: 'Brown Pro', sans-serif;
     display: grid;
@@ -466,7 +466,7 @@ section {
         grid-area: section__items;
         display: grid;
         gap: 30px;
-
+        justify-self: end;
         .item {
             display: flex;
             align-items: center;
@@ -481,7 +481,7 @@ section {
 
     .section__shoe {
         grid-area: section__shoe;
-
+        justify-self: start;
         img {
             width: 500px;
         }
@@ -499,7 +499,9 @@ section {
 
     .box-section {
         gap: 20px;
-
+        .section__h2 {
+            justify-self: center;
+        }
         .section__items {
             display: grid;
             gap: 20px;
