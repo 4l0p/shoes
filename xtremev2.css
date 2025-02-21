@@ -200,9 +200,10 @@ main {
     display: grid;
     place-items: center;
     padding: 8px;
-    border: 1px solid rgb(100, 100, 100);
+    border: 3px solid rgb(100, 100, 100);
     border-radius: 5px;
     line-height: 1;
+    cursor: pointer;
 }
 
 .options--colors__img img.selected,
