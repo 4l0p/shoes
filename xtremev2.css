@@ -456,10 +456,11 @@ section {
     grid-template-areas:
         "section__h2 section__h2"
         "section__items section__shoe";
-    place-items: center;
+    align-items: center;
 
     .section__h2 {
         grid-area: section__h2;
+        justify-self: center;
     }
 
     .section__items {
