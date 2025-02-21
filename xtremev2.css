@@ -252,7 +252,7 @@ main {
 
     button {
         font-family: 'Oxanium';
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 600;
         background-color: #4169e1;
         color: white;
@@ -260,6 +260,7 @@ main {
         border-radius: 4px;
         border: none;
         cursor: pointer;
+        padding: 10px 0;
     }
 
     button:hover {
