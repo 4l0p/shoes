@@ -661,6 +661,8 @@ footer {
     }
 }
 
+
+/* AJUSTES TELAS COM 150% DE ZOOM */
 @media (min-width: 1000px) and (max-width: 1500px) {
     body {
         font-size: 0.7rem;
