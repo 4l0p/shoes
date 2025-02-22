@@ -597,6 +597,70 @@ section {
     filter: none;
 }
 
+footer {
+    background-color: inherit;
+    margin: 3.1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+
+        .row-up {
+            display: flex;
+
+            div {
+                margin-right: 3.1rem;
+
+                h2 {
+                    margin: 1.25rem 0;
+                }
+
+                p {
+                    line-height: 1.8;
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+
+                img.size {
+                    height: 1.5rem;
+                }
+            }
+
+            div.links {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    margin-bottom: 0.9rem;
+                }
+            }
+        }
+
+        .row-down {
+            margin-top: 1.8rem;
+            text-align: center;
+            line-height: 2.2;
+        }
+    }
+}
+
 @media (min-width: 1000px) and (max-width: 1500px) {
     body {
         font-size: 0.7rem;
