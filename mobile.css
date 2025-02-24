@@ -29,7 +29,6 @@
         section {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             max-width: 768px;
 
             .section-1 {
@@ -273,17 +272,274 @@
 }
 
 @media (max-width: 500px) {
-    .main {
-        flex-direction: column;
-        width: auto;
+    body {
+        padding: 0;
     }
 
-    .main-info {
-        grid-template-columns: 40rem;
+    .page {
+        padding: 0;
     }
 
-    .main-info,
-    .main-info__title {
-        gap: 1rem;
+    main {
+        max-width: 768px;
+
+        .main {
+            flex-direction: column;
+
+            .main-info,
+            .main-info__title {
+                gap: 1rem;
+                width: 100%;
+            }
+
+            .main-photo {
+                img {
+                    height: 43rem;
+                }
+            }
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            max-width: 768px;
+
+            .section-1 {
+                .section__xtreme--blur {
+                    img {
+                        max-width: 43rem;
+                    }
+                }
+            }
+
+            .section-2 {
+                background: url(./assets/background-section-3-mobile.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 69rem;
+                background-size: cover;
+                display: grid;
+                place-items: center;
+            }
+
+            .section-3 {
+                background: url(./assets/background-section-4-mobile.jpg) no-repeat;
+                background-position: left bottom;
+                min-height: 55.3rem;
+                background-size: cover;
+                display: grid;
+                justify-content: end;
+                align-content: center;
+            }
+
+            .section-4 {
+                background: url(./assets/background-section-5-mobile.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 37.5rem;
+                background-size: cover;
+                display: grid;
+                place-items: center;
+            }
+
+            .section-5 {
+                background: url(./assets/background-section-1.jpg) no-repeat;
+                display: grid;
+                place-items: center;
+                padding: 1.8rem 0;
+
+                .section__slide {
+                    display: grid;
+                    grid-template-areas:
+                        "section__slide--prev section__slide--shoe section__slide--next"
+                        ". section__slide--thumbs .";
+                    place-items: center;
+                    gap: 1.25rem;
+
+                    .section__slide--prev {
+                        grid-area: section__slide--prev;
+
+                        img {
+                            height: 3.1rem;
+                            filter: invert(100%);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .section__slide--shoe {
+                        grid-area: section__slide--shoe;
+
+                        img {
+                            max-width: 37.5rem;
+                            filter: drop-shadow(0px 0px 6px #fff);
+                            animation: cloudAnimation 3s infinite alternate;
+                        }
+                    }
+
+                    .section__slide--next {
+                        grid-area: section__slide--next;
+
+                        img {
+                            height: 3.1rem;
+                            filter: invert(100%);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .section__slide--thumbs {
+                        grid-area: section__slide--thumbs;
+                        width: 100%;
+                        display: grid;
+                        place-items: center;
+
+                        .thumbs-slider {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+
+                            .thumb-circle {
+                                height: 6.25rem;
+                                width: 6.25rem;
+                                background-color: rgb(196, 196, 196);
+                                border-radius: 50%;
+                                display: grid;
+                                place-items: center;
+                                cursor: pointer;
+
+                                img {
+                                    height: 3.1rem;
+                                    width: 4.8rem;
+                                }
+                            }
+
+                            .thumb-circle.active {
+                                border: 0.18rem solid #355dd4;
+                                background-color: #ffffff;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .section-6 {
+                background: url(./assets/background-section-7-mobile.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 37.5rem;
+                background-size: cover;
+                display: grid;
+                justify-content: end;
+                align-content: center;
+            }
+
+            .section-7 {
+                background: url(./assets/background-section-8.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 37.5rem;
+                background-size: cover;
+                display: grid;
+                grid-template-areas:
+                    "section__h2 section__h2"
+                    "section__items section__shoe";
+                align-items: center;
+
+                .section__h2 {
+                    grid-area: section__h2;
+                    justify-self: center;
+                }
+
+                .section__items {
+                    grid-area: section__items;
+                    display: grid;
+                    gap: 1.8rem;
+                    justify-self: end;
+
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.9rem;
+
+                        .text {
+                            font-size: 1.5rem;
+                            color: #414141;
+                        }
+                    }
+                }
+
+                .section__shoe {
+                    grid-area: section__shoe;
+                    justify-self: start;
+
+                    img {
+                        width: 31.2rem;
+                    }
+                }
+            }
+
+            .section-8 {
+                background: url(./assets/background-section-9-mobile.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 37.5rem;
+                background-size: cover;
+                display: grid;
+                justify-content: end;
+                align-content: center;
+
+                .box-section {
+                    gap: 1.25rem;
+
+                    .section__h2 {
+                        justify-self: center;
+
+                        h2 {
+                            filter: none;
+                        }
+                    }
+
+                    .section__items {
+                        display: grid;
+                        gap: 1.25rem;
+
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            gap: 1.25rem;
+
+                            .text {
+                                display: flex;
+                                align-items: center;
+                                font-size: 1.25rem;
+                                gap: 1.25rem;
+                                max-width: 46.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-9 {
+                background: url(./assets/background-section-10-mobile.jpg) no-repeat;
+                background-position: center bottom;
+                min-height: 37.5rem;
+                background-size: cover;
+                display: grid;
+                align-items: center;
+
+                .box-section {
+                    width: 100%;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    footer {
+        max-width: 768px;
+        .footer {
+            display: flex;
+            .row-up {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }
