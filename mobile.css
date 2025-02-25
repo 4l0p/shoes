@@ -312,10 +312,15 @@
         section {
             display: flex;
             flex-direction: column;
-            max-width: 25rem;
+            width: 100%;
 
             .section-1 {
                 .section__xtreme--blur {
+                    img {
+                        max-width: 25rem;
+                    }
+                }
+                .section__xtreme--cloud {
                     img {
                         max-width: 25rem;
                     }
