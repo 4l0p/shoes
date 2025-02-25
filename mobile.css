@@ -281,7 +281,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 412px) {
     body {
         padding: 0;
     }
@@ -291,7 +291,7 @@
     }
 
     main {
-        max-width: 500px;
+        max-width: 25rem;
 
         .main {
             flex-direction: column;
@@ -304,7 +304,7 @@
 
             .main-photo {
                 img {
-                    height: 30rem;
+                    height: 25rem;
                 }
             }
         }
@@ -312,12 +312,12 @@
         section {
             display: flex;
             flex-direction: column;
-            max-width: 500px;
+            max-width: 25rem;
 
             .section-1 {
                 .section__xtreme--blur {
                     img {
-                        max-width: 43rem;
+                        max-width: 25rem;
                     }
                 }
             }
@@ -534,7 +534,7 @@
                                 align-items: center;
                                 font-size: 1.25rem;
                                 gap: 1.25rem;
-                                max-width: 46.8rem;
+                                max-width: 25rem;
                                 filter: drop-shadow(2px 2px 2px #000);
                             }
                         }
@@ -561,7 +561,7 @@
     }
 
     footer {
-        max-width: 500px;
+        max-width: 25rem;
 
         .footer {
             display: flex;
