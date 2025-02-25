@@ -21,7 +21,7 @@
 
             .main-photo {
                 img {
-                    height: 43rem;
+                    height: 768px;
                 }
             }
         }
@@ -34,7 +34,15 @@
             .section-1 {
                 .section__xtreme--blur {
                     img {
-                        max-width: 43rem;
+                        max-width: 30rem;
+                    }
+                }
+
+                .section__xtreme--cloud {
+                    position: absolute;
+
+                    img {
+                        max-width: 30rem;
                     }
                 }
             }
@@ -261,8 +269,10 @@
 
     footer {
         max-width: 768px;
+
         .footer {
             display: flex;
+
             .row-up {
                 display: flex;
                 flex-direction: column;
@@ -281,7 +291,7 @@
     }
 
     main {
-        max-width: 768px;
+        max-width: 500px;
 
         .main {
             flex-direction: column;
@@ -294,7 +304,7 @@
 
             .main-photo {
                 img {
-                    height: 43rem;
+                    height: 30rem;
                 }
             }
         }
@@ -302,7 +312,7 @@
         section {
             display: flex;
             flex-direction: column;
-            max-width: 768px;
+            max-width: 500px;
 
             .section-1 {
                 .section__xtreme--blur {
@@ -318,7 +328,12 @@
                 min-height: 69rem;
                 background-size: cover;
                 display: grid;
-                place-items: center;
+                place-items: start;
+                .box-section {
+                    width: 100%;
+                    padding: 1.25rem;
+                    gap: 2rem;
+                }
             }
 
             .section-3 {
@@ -328,7 +343,12 @@
                 background-size: cover;
                 display: grid;
                 justify-content: end;
-                align-content: center;
+                align-content: start;
+                .box-section {
+                    width: 100%;
+                    padding: 1.25rem;
+                    gap: 2rem;
+                }
             }
 
             .section-4 {
@@ -338,6 +358,11 @@
                 background-size: cover;
                 display: grid;
                 place-items: center;
+                .box-section {
+                    width: 100%;
+                    padding: 1.25rem;
+                    gap: 2rem;
+                }
             }
 
             .section-5 {
@@ -368,7 +393,7 @@
                         grid-area: section__slide--shoe;
 
                         img {
-                            max-width: 37.5rem;
+                            max-width: 22rem;
                             filter: drop-shadow(0px 0px 6px #fff);
                             animation: cloudAnimation 3s infinite alternate;
                         }
@@ -396,8 +421,8 @@
                             justify-content: space-around;
 
                             .thumb-circle {
-                                height: 6.25rem;
-                                width: 6.25rem;
+                                height: 5rem;
+                                width: 5rem;
                                 background-color: rgb(196, 196, 196);
                                 border-radius: 50%;
                                 display: grid;
@@ -435,30 +460,31 @@
                 background-position: center bottom;
                 min-height: 37.5rem;
                 background-size: cover;
-                display: grid;
-                grid-template-areas:
-                    "section__h2 section__h2"
-                    "section__items section__shoe";
-                align-items: center;
-
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 .section__h2 {
-                    grid-area: section__h2;
-                    justify-self: center;
+                    padding: 1.25rem;
+                    h2.black {
+                        color: #414141;
+                        filter: none;
+                        font-size: 1.5rem;
+                    }
                 }
 
                 .section__items {
                     grid-area: section__items;
                     display: grid;
-                    gap: 1.8rem;
+                    gap: 1rem;
                     justify-self: end;
 
                     .item {
                         display: flex;
                         align-items: center;
                         gap: 0.9rem;
+                        padding: 1.25rem;
 
                         .text {
-                            font-size: 1.5rem;
                             color: #414141;
                         }
                     }
@@ -469,7 +495,7 @@
                     justify-self: start;
 
                     img {
-                        width: 31.2rem;
+                        width: 20rem;
                     }
                 }
             }
@@ -497,7 +523,7 @@
                     .section__items {
                         display: grid;
                         gap: 1.25rem;
-
+                        padding: 1.25rem;
                         .item {
                             display: flex;
                             align-items: center;
@@ -509,6 +535,7 @@
                                 font-size: 1.25rem;
                                 gap: 1.25rem;
                                 max-width: 46.8rem;
+                                filter: drop-shadow(2px 2px 2px #000);
                             }
                         }
                     }
@@ -527,15 +554,18 @@
                     width: 100%;
                     justify-content: center;
                     text-align: center;
+                    padding: 1.25rem;
                 }
             }
         }
     }
 
     footer {
-        max-width: 768px;
+        max-width: 500px;
+
         .footer {
             display: flex;
+
             .row-up {
                 display: flex;
                 flex-direction: column;
