@@ -41,9 +41,11 @@
                     display: flex;
                     justify-content: center;
                 }
+
                 & .section__xtreme--blur {
                     display: flex;
                     justify-content: center;
+
                     img {
                         max-width: 80%;
                     }
@@ -53,6 +55,7 @@
                     position: absolute;
                     display: flex;
                     justify-content: center;
+
                     img {
                         max-width: 70%;
                     }
@@ -81,6 +84,7 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 align-content: flex-start;
+
                 & .box-section.right {
                     width: 100%;
                     margin-right: 0;
@@ -95,6 +99,7 @@
                 background-size: cover;
                 display: grid;
                 place-items: flex-start;
+
                 & .box-section {
                     width: 100%;
                     padding: 0.8rem;
@@ -265,6 +270,7 @@
                         display: grid;
                         gap: 1.25rem;
                         padding: 1rem;
+
                         .item {
                             display: flex;
                             align-items: center;
@@ -275,7 +281,7 @@
                                 align-items: center;
                                 font-size: 1.25rem;
                                 gap: 1.25rem;
-                                filter: drop-shadow( 1px 4px 3px #000);
+                                filter: drop-shadow(1px 4px 3px #000);
                             }
                         }
                     }
@@ -304,14 +310,17 @@
         width: 100%;
         padding: 0;
         margin: 0;
+
         & .footer {
             width: inherit;
             align-items: normal;
             max-width: 100%;
-           & .row-up {
+
+            & .row-up {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
                 & div {
                     margin: 0;
                 }
