@@ -48,14 +48,10 @@ body {
     background-color: #272727;
     color: var(--color-font);
     font-family: 'Brown Pro', sans-serif;
-    display: grid;
-    place-items: center;
-}
-
-.page {
-    display: grid;
-    place-items: center;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .marquee {
@@ -63,6 +59,13 @@ body {
     text-align: center;
     background-color: var(--color-blue);
     padding: 0.31rem 0;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1220px;
 }
 
 header {
@@ -80,32 +83,67 @@ header {
 }
 
 main {
-    width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     gap: 1.87rem;
 }
 
 .main {
     display: flex;
-    gap: 1.87rem;
+    flex-direction: row;
+    gap: 1rem;
+
 }
 
 .main-photo {
-    display: grid;
-    place-items: center;
+    flex: 1;
 }
 
 .main-photo img {
-    height: 45rem;
+    max-height: 41rem;
     border-radius: 0.5rem;
 }
 
 .main-info {
-    display: grid;
-    grid-auto-rows: min-content;
-    grid-template-columns: 31rem;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    width: auto;
+}
+
+@media (max-width: 1220px) {
+    main {
+        display: flex;
+        justify-content: center;
+        gap: 1.87rem;
+    }
+    
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    
+    }
+    
+    .main-photo {
+        flex: none;
+    }
+    
+    .main-photo img {
+        max-height: 41rem;
+        border-radius: 0.5rem;
+    }
+    
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        & .main-info__title,
+        & .main-info__price {
+            justify-content: center;
+        }
+    }
 }
 
 .main-info__title {
@@ -367,6 +405,7 @@ section {
 
 .section-5 {
     background: url(./assets/background-section-1.svg) no-repeat;
+    background-size: cover;
     display: grid;
     place-items: center;
     padding: 1.8rem 0;
@@ -657,234 +696,6 @@ footer {
             margin-top: 1.8rem;
             text-align: center;
             line-height: 2.2;
-        }
-    }
-}
-
-
-/* AJUSTES TELAS COM 150% DE ZOOM */
-@media (min-width: 1000px) and (max-width: 1500px) {
-    body {
-        font-size: 0.7rem;
-    }
-
-    p {
-        font-size: 0.75rem;
-    }
-
-    .marquee {
-        padding: 0.18rem;
-    }
-
-    header {
-        .header {
-            .logo {
-                img {
-                    height: 5rem;
-                }
-            }
-        }
-    }
-
-    main {
-        gap: 1.25rem;
-
-        .main {
-            gap: 1.20rem;
-
-            .main-photo {
-                img {
-                    max-height: 40rem;
-                }
-            }
-
-            .main-info {
-                grid-template-columns: 25rem;
-                gap: 1.2rem;
-                font-size: 0.75rem;
-
-                .main-info__options {
-                    .main-info__options--colors {
-                        h3 {
-                            font-size: 0.75rem;
-                        }
-                    }
-
-                    .options--colors__img {
-                        max-width: 25rem;
-                        justify-content: space-between;
-                        margin: 0;
-
-                        img {
-                            height: auto;
-                        }
-                    }
-
-                    .main-info__options--sizes {
-                        .options--sizes__title {
-                            h3 {
-                                font-size: 0.75rem;
-                            }
-                        }
-
-                        .options--sizes__numbers {
-                            .size {
-                                border: 2px solid rgb(100, 100, 100);
-                                border-radius: .30rem;
-                                font-size: 1rem;
-                                padding: 0.3rem;
-                            }
-
-                            .size.selected {
-                                border: 2px solid #4169e1;
-                                font-weight: 600;
-                            }
-                        }
-                    }
-
-                    .main-info__payment {
-                        gap: 1rem;
-
-                        .payment__amount {
-                            button {
-                                width: 2rem;
-                                font-size: 1rem;
-                            }
-
-                            input[type=number] {
-                                font-size: 1rem;
-                            }
-                        }
-
-                        .payment__button {
-                            button {
-                                font-size: 1.2rem;
-                                padding: 0.6rem 0;
-                                line-height: 101%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        h2 {
-            font-size: 1.2rem;
-        }
-
-        .box-section {
-            width: calc(100% - 5rem);
-        }
-
-        .section__text {
-            width: 36.2rem;
-            font-size: 1rem;
-        }
-
-        .right {
-            margin-right: calc((100% + 10.6rem) / 2);
-        }
-
-        .section-7 {
-            .section__items {
-                .item {
-                    .text {
-                        font-size: 1rem;
-                    }
-                }
-            }
-
-            .section__shoe {
-                img {
-                    width: 28.1rem;
-                }
-            }
-        }
-
-        .section-8 {
-            .box-section.right {
-                width: 100%;
-                max-width: 36.2rem;
-
-                .section__items {
-                    .item {
-                        .icon {
-                            img {
-                                height: 4rem;
-                                width: 4rem;
-                            }
-
-                            .text {
-                                font-size: 1rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    footer {
-        background-color: inherit;
-        margin: 3.1rem 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        h2 {
-            font-size: 16px;
-        }
-
-        .footer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 90%;
-
-            .row-up {
-                display: flex;
-
-                div {
-                    margin-right: 3.1rem;
-
-                    h2 {
-                        margin: 1.25rem 0;
-                    }
-
-                    p {
-                        line-height: 1.8;
-                    }
-
-                    a {
-                        display: block;
-                        width: 100%;
-                    }
-
-                    img.size {
-                        height: 1.5rem;
-                    }
-                }
-
-                div.links {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-
-                    a {
-                        color: #ffffff;
-                        text-decoration: none;
-                        font-weight: 700;
-                        margin-bottom: 0.9rem;
-                    }
-                }
-            }
-
-            .row-down {
-                margin-top: 1.8rem;
-                text-align: center;
-                line-height: 2.2;
-            }
         }
     }
 }
