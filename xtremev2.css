@@ -293,34 +293,16 @@ input::-webkit-outer-spin-button {
     }
 
     .modal-sticky {
-        display: block;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
         position: fixed;
-        bottom: 0;
-        border: 2px solid white;
-        background-color: #414141;
-        width: 100%;
+        bottom: 5px;
+        width: 300px;
 
-        & .main-info__price {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        & .payment__button {
+            width: 100%;
         }
-
-        & .main-info__options--colors {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            & .options--colors__img img {
-                width: 5rem;
-                height: auto;
-            }
-        }
-
-        & .main-info__options--sizes {
-
-        }
-
     }
 
     main {
