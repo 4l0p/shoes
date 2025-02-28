@@ -297,11 +297,30 @@ input::-webkit-outer-spin-button {
         position: fixed;
         bottom: 0;
         border: 2px solid white;
+        background-color: #414141;
+        width: 100%;
 
-        & .options--colors__img img {
-            width: 6.2rem;
-            height: auto;
+        & .main-info__price {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
+
+        & .main-info__options--colors {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            & .options--colors__img img {
+                width: 5rem;
+                height: auto;
+            }
+        }
+
+        & .main-info__options--sizes {
+
+        }
+
     }
 
     main {
@@ -328,9 +347,6 @@ input::-webkit-outer-spin-button {
         justify-content: center;
         gap: 2rem;
         width: auto;
-        & .main-info__options, .main-info__price {
-            display: none;
-        }
     }
 }
 
