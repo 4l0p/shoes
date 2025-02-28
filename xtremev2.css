@@ -297,9 +297,9 @@ input::-webkit-outer-spin-button {
         justify-self: center;
         justify-content: center;
         flex-wrap: wrap;
-        position: fixed;
-        bottom: 5px;
-        width: 300px;
+        position: sticky;
+        bottom: 1rem;
+        width: 360px;
         gap: 10px;
         & .modal-sticky__color {
             img {
@@ -339,7 +339,7 @@ input::-webkit-outer-spin-button {
     }
     
     .main-photo {
-        flex: none;
+        width: 100%;
     }
 
     .main-info {
