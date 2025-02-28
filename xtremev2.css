@@ -292,6 +292,15 @@ input::-webkit-outer-spin-button {
         width: 100%;
     }
 
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & .logo {
+            height: 6.25rem;
+        }
+    }
+
     .modal-sticky {
         display: flex;
         justify-self: center;
@@ -340,6 +349,12 @@ input::-webkit-outer-spin-button {
     
     .main-photo {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        & img {
+            max-width: 95%;
+            height: auto;
+        }
     }
 
     .main-info {
