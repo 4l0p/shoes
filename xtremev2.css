@@ -89,19 +89,21 @@ main {
 }
 
 .main {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    width: 100%;
     gap: 1rem;
-
 }
 
 .main-photo {
-    flex: 1;
+    width: auto;
+    height: auto;
 }
 
 .main-photo img {
-    max-height: 41rem;
-    border-radius: 0.5rem;
+max-width: 100%;
+height: auto;
+border-radius: 5px;
 }
 
 .main-info {
@@ -111,41 +113,8 @@ main {
     width: auto;
 }
 
-@media (max-width: 1220px) {
-    main {
-        display: flex;
-        justify-content: center;
-        gap: 1.87rem;
-    }
-    
-    .main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    
-    }
-    
-    .main-photo {
-        flex: none;
-    }
-    
-    .main-photo img {
-        max-height: 41rem;
-        border-radius: 0.5rem;
-    }
-    
-    .main-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-        width: 100%;
-        & .main-info__title,
-        & .main-info__price {
-            justify-content: center;
-        }
-    }
+.modal-sticky {
+    display: none;
 }
 
 .main-info__title {
@@ -315,6 +284,54 @@ main {
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
     appearance: none;
+}
+
+@media (max-width: 930px) {
+
+    .page {
+        width: 100%;
+    }
+
+    .modal-sticky {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        border: 2px solid white;
+
+        & .options--colors__img img {
+            width: 6.2rem;
+            height: auto;
+        }
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        gap: 1.87rem;
+    }
+    
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    
+    }
+    
+    .main-photo {
+        flex: none;
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        width: auto;
+        & .main-info__options, .main-info__price {
+            display: none;
+        }
+    }
 }
 
 section {
