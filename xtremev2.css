@@ -296,10 +296,29 @@ input::-webkit-outer-spin-button {
         display: flex;
         justify-self: center;
         justify-content: center;
+        flex-wrap: wrap;
         position: fixed;
         bottom: 5px;
         width: 300px;
-
+        gap: 10px;
+        & .modal-sticky__color {
+            img {
+                width: 70px;
+                height: auto;
+            }
+        }
+        & .modal-sticky__sizes {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            & .size {
+                font-size: 13x;
+                padding: 5px;
+                border: 1px solid #fff;
+                text-align: center;
+            }
+        }
         & .payment__button {
             width: 100%;
         }
