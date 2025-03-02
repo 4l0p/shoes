@@ -427,6 +427,22 @@
             align-content: start;
         }
 
+        & .section-7 {
+            background: url(./assets/background-section-8.jpg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+
+            & .section__shoe {
+                img {
+                    width: 20rem;
+                }
+            }
+        }
+
         .box-section {
             width: 100%;
         }
