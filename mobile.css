@@ -398,7 +398,7 @@
 
                 & .section__slide--shoe {
                     & img {
-                        max-width: 23rem;
+                        max-width: 19rem;
                         height: auto;
                     }
                 }
