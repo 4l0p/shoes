@@ -172,30 +172,29 @@ border-radius: 5px;
 }
 
 .main-info__options--colors {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.6rem;
 }
 
 .options--colors__img {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    max-width: 43.7rem;
-    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .options--colors__img img {
-    width: 23%;
+    width: 6.25rem;
     height: auto;
     border: 0.12rem solid rgb(100, 100, 100);
     border-radius: 0.25rem;
     padding: 0.31rem;
     cursor: pointer;
-    object-fit: cover;
 }
 
 .main-info__options--sizes {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.62rem;
 }
 

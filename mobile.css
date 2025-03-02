@@ -303,5 +303,20 @@
         gap: 2rem;
         width: auto;
         max-width: 95%;
+
+        & .main-info__options {
+
+            & .main-info__options--colors {
+
+
+                & .options--colors__img {
+                    max-width: 100%;
+                    img {
+                        max-width: 5.3rem;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 }
