@@ -461,4 +461,23 @@
             margin-right: 0;
         }
     }
+
+    footer {
+        width: 100%;
+        .footer {
+            width: 100%;
+
+            .row-up {
+                flex-direction: column;
+                width: 100%;
+                div {
+                    margin-right: 0;
+
+                    img.size {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
 }

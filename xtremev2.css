@@ -608,10 +608,6 @@ section {
 
 footer {
     background-color: inherit;
-    margin: 3.1rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 
     h2 {
         font-size: 1.5rem;
@@ -622,7 +618,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 90%;
 
         .row-up {
             display: flex;
