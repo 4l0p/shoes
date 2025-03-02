@@ -367,6 +367,16 @@
             align-content: baseline;
         }
 
+        & .section-4 {
+            background: url(./assets/background-section-5-mobile.jpg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            min-height: 700px;
+            background-size: cover;
+            display: flex;
+            place-items: flex-start;
+        }
+
         .box-section {
             width: 100%;
         }
