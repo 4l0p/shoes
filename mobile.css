@@ -470,6 +470,7 @@
             .row-up {
                 flex-direction: column;
                 width: 100%;
+                padding-left: 1rem;
                 div {
                     margin-right: 0;
 
