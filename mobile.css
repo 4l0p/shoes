@@ -325,12 +325,13 @@
         & .section-1 {
             & .section__xtreme--blur {
                 & img {
-                    max-width: 25rem;
+                    max-width: 23rem;
+                    height: auto;
                 }
             }
             & .section__xtreme--cloud {
                 & img {
-                    max-width: 25rem;
+                    max-width: 23rem;
                     height: auto;
                 }
             }
