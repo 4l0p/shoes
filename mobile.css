@@ -319,4 +319,21 @@
             }
         }
     }
+
+    section {
+
+        & .section-1 {
+            & .section__xtreme--blur {
+                & img {
+                    max-width: 25rem;
+                }
+            }
+            & .section__xtreme--cloud {
+                & img {
+                    max-width: 25rem;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
