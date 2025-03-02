@@ -336,5 +336,19 @@
                 }
             }
         }
+
+        & .section-2 {
+        background: url(./assets/background-section-3-mobile.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        min-height: 850px;
+        background-size: cover;
+        display: flex;
+        align-items: flex-start;
+        }
+
+        .box-section {
+            width: 100%;
+        }
     }
 }
