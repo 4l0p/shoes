@@ -235,6 +235,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+
         & .logo {
             height: 6.25rem;
         }
@@ -249,17 +250,20 @@
         bottom: 1rem;
         width: 360px;
         gap: 10px;
+
         & .modal-sticky__color {
             img {
                 width: 70px;
                 height: auto;
             }
         }
+
         & .modal-sticky__sizes {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100%;
+
             & .size {
                 font-size: 13x;
                 padding: 5px;
@@ -267,6 +271,7 @@
                 text-align: center;
             }
         }
+
         & .payment__button {
             width: 100%;
         }
@@ -277,19 +282,20 @@
         justify-content: center;
         gap: 1.87rem;
     }
-    
+
     .main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-    
+
     }
-    
+
     .main-photo {
         width: 100%;
         display: flex;
         justify-content: center;
+
         & img {
             max-width: 95%;
             height: auto;
@@ -311,6 +317,7 @@
 
                 & .options--colors__img {
                     max-width: 100%;
+
                     img {
                         max-width: 5.3rem;
                         height: auto;
@@ -329,6 +336,7 @@
                     height: auto;
                 }
             }
+
             & .section__xtreme--cloud {
                 & img {
                     max-width: 23rem;
@@ -338,17 +346,33 @@
         }
 
         & .section-2 {
-        background: url(./assets/background-section-3-mobile.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        min-height: 850px;
-        background-size: cover;
-        display: flex;
-        align-items: flex-start;
+            background: url(./assets/background-section-3-mobile.jpg);
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            min-height: 850px;
+            background-size: cover;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        & .section-3 {
+            background: url(./assets/background-section-4-mobile.jpg);
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            min-height: 885px;
+            background-size: cover;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            align-content: baseline;
         }
 
         .box-section {
             width: 100%;
+        }
+
+        .right {
+            margin-right: 0;
         }
     }
 }
