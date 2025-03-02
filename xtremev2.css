@@ -205,7 +205,7 @@ border-radius: 5px;
 
 .options--sizes__numbers .size {
     font-family: 'Oxanium';
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: normal;
     display: grid;
     place-items: center;
