@@ -377,6 +377,48 @@
             place-items: flex-start;
         }
 
+        & .section-5 {
+            background: url(./assets/background-section-1.svg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            background-size: cover;
+            padding: 0;
+
+            & .section__slide {
+
+                gap: 0.5rem;
+
+                & .section__slide--prev,
+                .section__slide--next {
+                    img {
+                        height: 2rem;
+                    }
+                }
+
+                & .section__slide--shoe {
+                    & img {
+                        max-width: 23rem;
+                        height: auto;
+                    }
+                }
+
+                & .section__slide--thumbs {
+                    & .thumbs-slider {
+                        & .thumb-circle {
+                            height: 4rem;
+                            width: 4rem;
+
+                            img {
+                                height: 2rem;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .box-section {
             width: 100%;
         }
