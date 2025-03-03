@@ -507,6 +507,11 @@
                     }
                 }
             }
+
+            .row-down {
+                text-align: left;
+                padding: 0 1rem;
+            }
         }
     }
 }
