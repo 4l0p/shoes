@@ -369,8 +369,12 @@
                 & .section__h2 {
 
                     & h2 {
-                        font-size: 18px;
+                        font-size: 26px;
                     }
+                }
+
+                & .section__text {
+                    font-size: 27px;
                 }
             }
         }
