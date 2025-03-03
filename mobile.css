@@ -444,9 +444,14 @@
             display: flex;
             flex-direction: column;
 
+            & .section__h2,
+            .section__items {
+                padding: 1rem 1rem 0 1rem;
+            }
+
             & .section__shoe {
                 img {
-                    width: 20rem;
+                    width: 18rem;
                 }
             }
         }
