@@ -73,9 +73,6 @@ optionSize.forEach((size) => {
   })
 })
 
-
-
-
 function showMainPhoto() {
   console.log(mainPhoto)
   console.log(mainPhoto)
@@ -89,4 +86,6 @@ function showMainPhoto() {
   })
 }
 
-
+document.getElementById('addToBag').addEventListener('click', () => {
+  document.getElementsByClassName('main-info')[0].scrollIntoView({behavior: 'smooth'})
+})
