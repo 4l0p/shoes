@@ -274,14 +274,13 @@
         }
 
         & button {
-            background-color: #4674ff;
+            background-color: greenyellow;
             border-radius: 50%;
             padding: 1rem;
             border: none;
             & img {
                 height: 24px;
                 width: auto;
-                filter: invert(100%);
             }
         }
     }
