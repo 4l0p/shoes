@@ -361,22 +361,6 @@
             background-size: cover;
             display: flex;
             align-items: flex-start;
-
-            & .box-section {
-                padding: 0 1rem;
-                gap: 1rem;
-
-                & .section__h2 {
-
-                    & h2 {
-                        font-size: 26px;
-                    }
-                }
-
-                & .section__text {
-                    font-size: 27px;
-                }
-            }
         }
 
         & .section-3 {
@@ -445,7 +429,7 @@
             background: url(./assets/background-section-7-mobile.jpg);
             background-position: left bottom;
             background-repeat: no-repeat;
-            min-height: 865px;
+            min-height: 955px;
             background-size: cover;
             justify-content: flex-start;
             align-content: start;
@@ -477,8 +461,21 @@
             align-content: start;
         }
 
-        .box-section {
+        & .box-section {
+            padding: 1rem 1rem 0 1rem;
+            gap: 1rem;
             width: 100%;
+            & .section__h2 {
+
+                & h2 {
+                    font-size: 26px;
+                }
+            }
+
+            & .section__text {
+                font-size: 23px;
+                text-align: left;
+            }
         }
 
         .right {
