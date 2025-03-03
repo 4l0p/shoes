@@ -361,6 +361,18 @@
             background-size: cover;
             display: flex;
             align-items: flex-start;
+
+            & .box-section {
+                padding: 0 1rem;
+                gap: 1rem;
+
+                & .section__h2 {
+
+                    & h2 {
+                        font-size: 18px;
+                    }
+                }
+            }
         }
 
         & .section-3 {
