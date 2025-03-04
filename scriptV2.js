@@ -102,16 +102,20 @@ optionsColorsImg.forEach((option, index) => {
 
 const addSubNumber = document.querySelectorAll('.payment__amount button')
 const inputNumberQuantity = document.querySelector('.payment__amount input')
+const updatePrice = document.querySelector('main-info__price--real h2')
 
 inputNumberQuantity.value = 1
 
+detectNumber(inputNumberQuantity.value)
+
 function detectNumber(numbers) {
   numbers = parseInt(numbers)
-  if (numbers <= 2) {
+  if (numbers <= 1) {
     numbers = 1
     addSubNumber[1].disabled = true
     addSubNumber[0].disabled = false
-  } else if(numbers >= 9) {
+  } else if(numbers >= 10) {
+    numbers = 10
     addSubNumber[1].disabled = false
     addSubNumber[0].disabled = true
   } else {
@@ -122,7 +126,7 @@ function detectNumber(numbers) {
 
 addSubNumber.forEach((symbol, index) => {
   symbol.addEventListener('click', () => {
-    detectNumber(inputNumberQuantity.value)
     inputNumberQuantity.value = eval(inputNumberQuantity.value + addSubNumber[index].textContent + 1)
+    detectNumber(inputNumberQuantity.value)
   })
 })
