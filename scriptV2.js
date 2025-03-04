@@ -95,7 +95,7 @@ optionsColorsImg.forEach((option, index) => {
       })
       e.target.classList.add('selected')
       mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
-      titleProduct.innerHTML = `<h1>Xtreme 200mx - ${colorProduct[index]}</h1>`
+      titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[index]} </span></h1>`
     }
   })
 })

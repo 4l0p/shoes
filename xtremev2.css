@@ -665,6 +665,11 @@ footer {
     }
 }
 
+.capitalize {
+    text-transform: capitalize;
+    font-size: 1.87rem;
+}
+
 .hide {
     display: none;
 }
