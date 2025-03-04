@@ -72,6 +72,8 @@ document.getElementById('addToBag').addEventListener('click', () => {
 const mainPhoto = document.querySelector('.main-photo')
 const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
 const bigPhotos = ['black', 'grey', 'orange', 'red']
+const titleProduct = document.querySelector('.main-info__title--h1')
+const colorProduct = ['Preto', 'Cinza', 'Laranja', 'Vermelho']
 
 currentImageIndex = 0
 
@@ -85,12 +87,15 @@ optionsColorsImg.forEach((option, index) => {
   option.addEventListener('click', (e) => {
     if(e.target.classList.contains('selected')) {
       e.target.classList.remove('selected')
+      titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
     } else {
       optionsColorsImg.forEach((otherOptions) => {
         otherOptions.classList.remove('selected')
+        titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
       })
       e.target.classList.add('selected')
       mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
+      titleProduct.innerHTML = `<h1>Xtreme 200mx - ${colorProduct[index]}</h1>`
     }
   })
 })
