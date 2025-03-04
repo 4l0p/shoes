@@ -79,7 +79,7 @@ currentImageIndex = 0
 
 //mostra a imagem do tenis preto por padrão
 mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[currentImageIndex]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
-
+titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[currentImageIndex]} </span></h1>`
 //seleciona o tenis preto por padrão
 optionsColorsImg[currentImageIndex].classList.add('selected')
 
