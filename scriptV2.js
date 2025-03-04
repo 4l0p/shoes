@@ -65,7 +65,7 @@ optionSize.forEach((size) => {
 
 //mover a pagina para seção de comprar
 document.getElementById('addToBag').addEventListener('click', () => {
-  document.getElementsByClassName('main-info')[0].scrollIntoView({behavior: 'smooth'})
+  document.getElementsByClassName('main-info')[0].scrollIntoView({ behavior: 'smooth' })
 })
 
 //selecionando os elementos da galeria de fotos principal
@@ -85,7 +85,7 @@ optionsColorsImg[currentImageIndex].classList.add('selected')
 
 optionsColorsImg.forEach((option, index) => {
   option.addEventListener('click', (e) => {
-    if(e.target.classList.contains('selected')) {
+    if (e.target.classList.contains('selected')) {
       e.target.classList.remove('selected')
       titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
     } else {
@@ -97,5 +97,32 @@ optionsColorsImg.forEach((option, index) => {
       mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
       titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[index]} </span></h1>`
     }
+  })
+})
+
+const addSubNumber = document.querySelectorAll('.payment__amount button')
+const inputNumberQuantity = document.querySelector('.payment__amount input')
+
+inputNumberQuantity.value = 1
+
+function detectNumber(numbers) {
+  numbers = parseInt(numbers)
+  if (numbers <= 2) {
+    numbers = 1
+    addSubNumber[1].disabled = true
+    addSubNumber[0].disabled = false
+  } else if(numbers >= 9) {
+    addSubNumber[1].disabled = false
+    addSubNumber[0].disabled = true
+  } else {
+    addSubNumber[0].disabled = false
+    addSubNumber[1].disabled = false
+  }
+}
+
+addSubNumber.forEach((symbol, index) => {
+  symbol.addEventListener('click', () => {
+    detectNumber(inputNumberQuantity.value)
+    inputNumberQuantity.value = eval(inputNumberQuantity.value + addSubNumber[index].textContent + 1)
   })
 })
