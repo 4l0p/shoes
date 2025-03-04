@@ -156,6 +156,10 @@ border-radius: 5px;
 .main-info__price--real h2 {
     color: var(--color-blue);
     font-weight: bold;
+
+    & span {
+        font-size: 1.68rem;
+    }
 }
 
 .main-info__price--card h3 {

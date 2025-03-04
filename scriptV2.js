@@ -102,7 +102,9 @@ optionsColorsImg.forEach((option, index) => {
 
 const addSubNumber = document.querySelectorAll('.payment__amount button')
 const inputNumberQuantity = document.querySelector('.payment__amount input')
-const updatePrice = document.querySelector('main-info__price--real h2')
+const price = document.querySelector('.main-info__price--real span')
+
+console.log(price.innerText)
 
 inputNumberQuantity.value = 1
 
@@ -124,9 +126,19 @@ function detectNumber(numbers) {
   }
 }
 
+function updatePrice(quantity) {
+  fixPrice = 327.90
+  quantity = parseFloat(quantity)
+  result = (fixPrice * quantity).toFixed(2)
+  return result
+}
+
 addSubNumber.forEach((symbol, index) => {
   symbol.addEventListener('click', () => {
     inputNumberQuantity.value = eval(inputNumberQuantity.value + addSubNumber[index].textContent + 1)
     detectNumber(inputNumberQuantity.value)
+    const setHtml = updatePrice(inputNumberQuantity.value)
+    console.log(setHtml)
+    price.innerText = setHtml
   })
 })
