@@ -38,18 +38,7 @@ thumbnails.forEach((thumbnail, index) => {
 
 showCurrentImage();
 
-const mainPhoto = document.querySelector('.main-photo')
-const optionsColorsImg = document.querySelector('.options--colors__img img')
-const bigPhotos = ['black', 'grey', 'orange', 'red']
 const optionSize = document.querySelectorAll('.size')
-currentImageIndex = 0
-
-//mostra a imagem do tenis preto por padrão
-mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[currentImageIndex]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
-
-//seleciona o tenis preto por padrão
-optionsColorsImg.classList.add('selected')
-
 
 // remove qualquer seleção de tamanhos ao carregar a pagina
 optionSize.forEach((size) => {
@@ -73,19 +62,35 @@ optionSize.forEach((size) => {
   })
 })
 
-function showMainPhoto() {
-  console.log(mainPhoto)
-  console.log(mainPhoto)
-  optionsColorsImg.addEventListener('click', () => {
-    bigPhotos.forEach((photo) => {
-      const tagPhoto = `<img src="./assets/${photo}-big.jpg" alt="Imagem Grande do Tênis"></img>`
-      const thumPhoto = `<img src="./assets/${photo}-thumb.jpg" alt="Preto Thumb">`
-      optionsColorsImg.innerHTML = thumPhoto
-      mainPhoto.innerHTML = tagPhoto
-    })
-  })
-}
 
+//mover a pagina para seção de comprar
 document.getElementById('addToBag').addEventListener('click', () => {
   document.getElementsByClassName('main-info')[0].scrollIntoView({behavior: 'smooth'})
+})
+
+//selecionando os elementos da galeria de fotos principal
+const mainPhoto = document.querySelector('.main-photo')
+const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
+const bigPhotos = ['black', 'grey', 'orange', 'red']
+
+currentImageIndex = 0
+
+//mostra a imagem do tenis preto por padrão
+mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[currentImageIndex]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
+
+//seleciona o tenis preto por padrão
+optionsColorsImg[currentImageIndex].classList.add('selected')
+
+optionsColorsImg.forEach((option, index) => {
+  option.addEventListener('click', (e) => {
+    if(e.target.classList.contains('selected')) {
+      e.target.classList.remove('selected')
+    } else {
+      optionsColorsImg.forEach((otherOptions) => {
+        otherOptions.classList.remove('selected')
+      })
+      e.target.classList.add('selected')
+      mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
+    }
+  })
 })
