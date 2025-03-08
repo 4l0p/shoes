@@ -3,7 +3,7 @@ const images = section6.querySelectorAll('.section__slide--shoe img');
 const thumbnails = section6.querySelectorAll('.thumb-circle');
 const prevButton = section6.querySelector('.section__slide--prev');
 const nextButton = section6.querySelector('.section__slide--next');
-let selectedSize, selectedQuantity, selectedColor, selectedPrice = ''
+let selectedCode, selectedSize, selectedQuantity, selectedColor, selectedPrice, selectedDescription = ''
 
 let currentImageIndex = 0;
 
@@ -75,6 +75,7 @@ const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
 const bigPhotos = ['black', 'grey', 'orange', 'red']
 const titleProduct = document.querySelector('.main-info__title--h1')
 const colorProduct = ['Preto', 'Branco', 'Laranja', 'Vermelho']
+const codeProduct = [1, 2, 3, 4]
 
 currentImageIndex = 0
 
@@ -84,6 +85,7 @@ titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorPro
 //seleciona o tenis preto por padrão
 optionsColorsImg[currentImageIndex].classList.add('selected')
 selectedColor = colorProduct[currentImageIndex]
+selectedCode = codeProduct[currentImageIndex]
 
 optionsColorsImg.forEach((option, index) => {
   option.addEventListener('click', (e) => {
@@ -98,8 +100,10 @@ optionsColorsImg.forEach((option, index) => {
       e.target.classList.add('selected')
       mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
       titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[index]} </span></h1>`
-      console.log(colorProduct[index])
+      console.log(titleProduct.innerText)
       selectedColor = colorProduct[index]
+      selectedCode = codeProduct[index]
+      selectedDescription = titleProduct.innerText
   })
 })
 
@@ -152,10 +156,12 @@ btnBuy.addEventListener('click', () => {
   console.log(selectedPrice)
   
   const product = {
+    code: selectedCode,
     color: selectedColor,
     size: selectedSize,
     quantity: selectedQuantity,
-    price: selectedPrice
+    price: selectedPrice,
+    description: selectedDescription
   }
 
   const jsonProduct = JSON.stringify(product, null, 2)
