@@ -165,14 +165,17 @@ btnBuy.addEventListener('click', () => {
   const blob = new Blob([jsonProduct], { type: 'application/json'})
 
   const url = URL.createObjectURL(blob)
-  const link = document.createElement('a')
-  link.href = url
-  link.download = 'product.json'
+  window.open(url, '_blank')
 
-  document.body.appendChild(link)
-  link.click()
+  //forma se quiser fazer o download do arquivo json
+  // const link = document.createElement('a')
+  // link.href = url
+  // link.download = 'product.json'
 
-  document.body.removeChild(link)
-  URL.revokeObjectURL(url)
+  // document.body.appendChild(link)
+  // link.click()
+
+  // document.body.removeChild(link)
+  // URL.revokeObjectURL(url)
 
 })
