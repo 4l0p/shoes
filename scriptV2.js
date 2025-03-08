@@ -86,6 +86,7 @@ titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorPro
 optionsColorsImg[currentImageIndex].classList.add('selected')
 selectedColor = colorProduct[currentImageIndex]
 selectedCode = codeProduct[currentImageIndex]
+selectedDescription = titleProduct.innerText
 
 optionsColorsImg.forEach((option, index) => {
   option.addEventListener('click', (e) => {
