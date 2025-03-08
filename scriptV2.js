@@ -74,7 +74,7 @@ const mainPhoto = document.querySelector('.main-photo')
 const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
 const bigPhotos = ['black', 'grey', 'orange', 'red']
 const titleProduct = document.querySelector('.main-info__title--h1')
-const colorProduct = ['Preto', 'Cinza', 'Laranja', 'Vermelho']
+const colorProduct = ['Preto', 'Branco', 'Laranja', 'Vermelho']
 
 currentImageIndex = 0
 
