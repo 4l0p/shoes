@@ -3,6 +3,19 @@ const images = section6.querySelectorAll('.section__slide--shoe img');
 const thumbnails = section6.querySelectorAll('.thumb-circle');
 const prevButton = section6.querySelector('.section__slide--prev');
 const nextButton = section6.querySelector('.section__slide--next');
+//selecionando os elementos da galeria de fotos principal
+const mainPhoto = document.querySelector('.main-photo')
+const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
+const bigPhotos = ['black', 'grey', 'orange', 'red']
+const titleProduct = document.querySelector('.main-info__title--h1')
+const colorProduct = ['Preto', 'Branco', 'Laranja', 'Vermelho']
+const codeProduct = [1, 2, 3, 4]
+const optionSize = document.querySelectorAll('.size')
+const addSubNumber = document.querySelectorAll('.payment__amount button')
+const inputNumberQuantity = document.querySelector('.payment__amount input')
+const price = document.querySelector('.main-info__price--real span')
+const btnBuy = document.querySelector('.payment__button button')
+
 let selectedCode, selectedSize, selectedQuantity, selectedColor, selectedPrice, selectedDescription = ''
 
 let currentImageIndex = 0;
@@ -39,8 +52,6 @@ thumbnails.forEach((thumbnail, index) => {
 
 showCurrentImage();
 
-const optionSize = document.querySelectorAll('.size')
-
 // remove qualquer seleção de tamanhos ao carregar a pagina
 optionSize.forEach((size) => {
   size.classList.remove('selected')
@@ -63,19 +74,10 @@ optionSize.forEach((size) => {
   })
 })
 
-
 //mover a pagina para seção de comprar
 document.getElementById('addToBag').addEventListener('click', () => {
   document.getElementsByClassName('main-info')[0].scrollIntoView({ behavior: 'smooth' })
 })
-
-//selecionando os elementos da galeria de fotos principal
-const mainPhoto = document.querySelector('.main-photo')
-const optionsColorsImg = document.querySelectorAll('.options--colors__img img')
-const bigPhotos = ['black', 'grey', 'orange', 'red']
-const titleProduct = document.querySelector('.main-info__title--h1')
-const colorProduct = ['Preto', 'Branco', 'Laranja', 'Vermelho']
-const codeProduct = [1, 2, 3, 4]
 
 currentImageIndex = 0
 
@@ -107,10 +109,6 @@ optionsColorsImg.forEach((option, index) => {
       selectedDescription = titleProduct.innerText
   })
 })
-
-const addSubNumber = document.querySelectorAll('.payment__amount button')
-const inputNumberQuantity = document.querySelector('.payment__amount input')
-const price = document.querySelector('.main-info__price--real span')
 
 inputNumberQuantity.value = 1
 
@@ -147,8 +145,6 @@ addSubNumber.forEach((symbol, index) => {
     selectedPrice = updatePrice(inputNumberQuantity.value)
   })
 })
-
-const btnBuy = document.querySelector('.payment__button button')
 
 btnBuy.addEventListener('click', () => {
   console.log(selectedColor)
