@@ -680,3 +680,8 @@ footer {
 .hide {
     display: none;
 }
+
+.options--sizes__numbers .size.invalid {
+    border: 0.18rem solid red;
+    color: red;
+}

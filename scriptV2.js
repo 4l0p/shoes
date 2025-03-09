@@ -53,26 +53,44 @@ thumbnails.forEach((thumbnail, index) => {
 showCurrentImage();
 
 // remove qualquer seleção de tamanhos ao carregar a pagina
-optionSize.forEach((size) => {
-  size.classList.remove('selected')
-})
 
-// função para selecionar o tamanho
-optionSize.forEach((size) => {
-  size.addEventListener('click', (e) => {
-    // // Verifica se o elemento clicado já está selecionado
-    // if (e.target.classList.contains('selected')) {
-    //   // Se já estiver selecionado, remove a seleção
-    //   e.target.classList.remove('selected');
-    // } else {
-      // Remove a classe 'selected' de todos os elementos
-      optionSize.forEach((otherSize) => {
-        otherSize.classList.remove('selected');
-      });
+function removeSizeSelect() {
+  optionSize.forEach((size) => {
+    size.classList.remove('invalid')
+  })
+}
+removeSizeSelect()
+
+function sizeSelect() {
+  // função para selecionar o tamanho
+  optionSize.forEach((size) => {
+    size.addEventListener('click', (e) => {
+      // Verifica se o elemento clicado já está selecionado
+      if (e.target.classList.contains('selected')) {
+        // Se já estiver selecionado, remove a seleção
+        e.target.classList.remove('selected');
+      } else {
+        //Remove a classe 'selected' de todos os elementos
+        optionSize.forEach((otherSizes) => {
+          otherSizes.classList.remove('selected')
+          otherSizes.classList.remove('invalid')
+        })
+      }
       e.target.classList.add('selected')
       selectedSize = size.innerHTML
+    })
   })
-})
+}
+
+sizeSelect()
+
+function verifySizeSelect() {
+  optionSize.forEach((size) => {
+    if (!size.classList.contains('selected')) {
+      size.classList.add('invalid')
+    }
+  })
+}
 
 //mover a pagina para seção de comprar
 document.getElementById('addToBag').addEventListener('click', () => {
@@ -96,21 +114,22 @@ optionsColorsImg.forEach((option, index) => {
     //   e.target.classList.remove('selected')
     //   titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
     // } else {
-      optionsColorsImg.forEach((otherOptions) => {
-        otherOptions.classList.remove('selected')
-        titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
-      })
-      e.target.classList.add('selected')
-      mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
-      titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[index]} </span></h1>`
-      console.log(titleProduct.innerText)
-      selectedColor = colorProduct[index]
-      selectedCode = codeProduct[index]
-      selectedDescription = titleProduct.innerText
+    optionsColorsImg.forEach((otherOptions) => {
+      otherOptions.classList.remove('selected')
+      titleProduct.innerHTML = `<h1>Xtreme 200mx</h1>`
+    })
+    e.target.classList.add('selected')
+    mainPhoto.innerHTML = `<img src="./assets/${bigPhotos[index]}-big.jpg" alt="Imagem Grande do Tênis"></img>`
+    titleProduct.innerHTML = `<h1>Xtreme 200mx - <span class='capitalize'>${colorProduct[index]} </span></h1>`
+    console.log(titleProduct.innerText)
+    selectedColor = colorProduct[index]
+    selectedCode = codeProduct[index]
+    selectedDescription = titleProduct.innerText
   })
 })
 
 inputNumberQuantity.value = 1
+selectedQuantity = inputNumberQuantity.value
 
 detectNumber(inputNumberQuantity.value)
 
@@ -120,7 +139,7 @@ function detectNumber(numbers) {
     numbers = 1
     addSubNumber[1].disabled = true
     addSubNumber[0].disabled = false
-  } else if(numbers >= 3) {
+  } else if (numbers >= 3) {
     numbers = 3
     addSubNumber[1].disabled = false
     addSubNumber[0].disabled = true
@@ -146,12 +165,7 @@ addSubNumber.forEach((symbol, index) => {
   })
 })
 
-btnBuy.addEventListener('click', () => {
-  console.log(selectedColor)
-  console.log(selectedSize)
-  console.log(selectedQuantity)
-  console.log(selectedPrice)
-  
+function generatesJSON() {
   const product = {
     code: selectedCode,
     color: selectedColor,
@@ -165,7 +179,7 @@ btnBuy.addEventListener('click', () => {
 
   console.log(jsonProduct)
 
-  const blob = new Blob([jsonProduct], { type: 'application/json'})
+  const blob = new Blob([jsonProduct], { type: 'application/json' })
 
   const url = URL.createObjectURL(blob)
   window.open(url, '_blank')
@@ -180,5 +194,8 @@ btnBuy.addEventListener('click', () => {
 
   // document.body.removeChild(link)
   // URL.revokeObjectURL(url)
+}
 
+btnBuy.addEventListener('click', () => {
+  verifySizeSelect()
 })
